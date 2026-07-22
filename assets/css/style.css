@@ -6,6 +6,18 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* ==========================================================================
+   Global layout tokens — change --page-width here to resize every page
+   at once. --text-measure controls the max line-length of body paragraphs
+   (kept narrower than the full page width for readability).
+   ========================================================================== */
+:root {
+  --page-width: 1080px;
+  --text-measure: 760px;
+  --hero-title-width: 900px;
+  --hero-subtitle-width: 640px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,7 +40,7 @@ img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
 .container {
-  max-width: 1080px;
+  max-width: var(--page-width);
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -140,7 +152,7 @@ a { color: inherit; text-decoration: none; }
   color: #f1f5f9;
   letter-spacing: -0.02em;
   margin: 0 auto 20px;
-  max-width: 900px;
+  max-width: var(--hero-title-width);
 }
 .title .brand-accent {
   color: #60a5fa;
@@ -162,7 +174,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(14px, 2vw, 18px);
   font-weight: 500;
   color: #94a3b8;
-  max-width: 640px;
+  max-width: var(--hero-subtitle-width);
   margin: 0 auto 32px;
   line-height: 1.6;
 }
@@ -215,21 +227,28 @@ a { color: inherit; text-decoration: none; }
 }
 .btn-secondary:hover { background: rgba(255,255,255,0.12); }
 
-/* ── General page sections ── */
-.section {
-  padding: 56px 0;
-}
-.section h2 {
+/* ── Global headings (apply the same way on every page) ── */
+h2 {
   font-size: clamp(22px, 3.5vw, 30px);
   font-weight: 800;
   letter-spacing: -0.02em;
   color: #0f172a;
   margin-bottom: 10px;
 }
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ── General page sections ── */
+.section {
+  padding: 56px 0;
+}
 .section > p.lead {
   font-size: 16px;
   color: #475569;
-  max-width: 760px;
+  max-width: var(--text-measure);
   margin-bottom: 8px;
 }
 .section-body p {
@@ -237,7 +256,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.75;
   color: #334155;
   margin-bottom: 16px;
-  max-width: 800px;
+  max-width: var(--text-measure);
 }
 .section:nth-of-type(even) { background: #ffffff; }
 
@@ -262,7 +281,7 @@ a { color: inherit; text-decoration: none; }
   font-size: 17px;
   color: #64748b;
   line-height: 1.6;
-  max-width: 760px;
+  max-width: var(--text-measure);
 }
 
 /* ── Key dates ── */
@@ -488,15 +507,76 @@ a { color: inherit; text-decoration: none; }
 }
 .person-link:hover { color: #2563eb; text-decoration: underline; }
 
-.placeholder-note {
-  background: rgba(245,158,11,0.1);
-  border: 1px dashed rgba(245,158,11,0.5);
-  border-radius: 12px;
-  padding: 14px 18px;
-  font-size: 14px;
-  color: #7c4a03;
+/* ── Topics of Interest (CFP page) ── */
+.topics-sub {
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   margin-bottom: 32px;
-  line-height: 1.6;
+}
+.topic-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+.topic-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.topic-num {
+  flex-shrink: 0;
+  width: 26px; height: 26px;
+  background: rgba(245,158,11,0.15);
+  border: 1px solid rgba(245,158,11,0.35);
+  color: #d97706;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topic-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e3a5f;
+  line-height: 1.4;
+}
+.topic-focus {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+  padding-left: 38px;
+}
+.topic-list {
+  list-style: none;
+  padding-left: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.topic-list li {
+  font-size: 16px;
+  color: #475569;
+  line-height: 1.5;
+  padding-left: 14px;
+  position: relative;
+}
+.topic-list li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px;
+  width: 5px; height: 5px;
+  background: #3b82f6;
+  border-radius: 50%;
 }
 
 /* ── Footer ── */
@@ -507,7 +587,7 @@ a { color: inherit; text-decoration: none; }
   margin-top: 40px;
 }
 .footer-inner {
-  max-width: 1080px;
+  max-width: var(--page-width);
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
