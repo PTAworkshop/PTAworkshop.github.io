@@ -6,3 +6,6 @@ vendor/
 .bundle/
 Gemfile.lock
 .DS_Store
+
+# Original Google Sites reference files - keep locally, don't publish to GitHub
+original-google-sites-embeds/
