@@ -1,13 +1,3 @@
-# ============================================================================
-# Organizers
-# ============================================================================
-# Same idea as _data/speakers.yml — pre-filled from your Google Sites page.
-#
-#   1. Save each headshot as assets/images/organizers/<name>.jpg
-#   2. Point `image:` at that file instead of the shared placeholder.
-#   3. Double-check `title` and `url` and edit as needed.
-# ============================================================================
-
 - name: "Ping-Chun Hsieh"
   title: "Associate Professor @ National Yang Ming Chiao Tung University"
   url: "https://pinghsieh.github.io/"

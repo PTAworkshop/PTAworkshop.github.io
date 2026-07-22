@@ -1,24 +1,3 @@
-# ============================================================================
-# Invited Speakers
-# ============================================================================
-# This list was pre-filled from your current Google Sites page so nothing
-# gets lost in the move. To finish the transfer, for EACH person:
-#
-#   1. Save their headshot photo as a .jpg/.png inside:
-#        assets/images/speakers/
-#      e.g. assets/images/speakers/sherry-yang.jpg
-#
-#   2. Change the `image:` line below from the shared placeholder to your
-#      new file, e.g.:
-#        image: /assets/images/speakers/sherry-yang.jpg
-#
-#   3. Double check `affiliation` and `url` (personal homepage) are correct,
-#      and edit them if anything changed.
-#
-# You can add/remove/reorder speakers freely — just copy the block format
-# below ("- name: ..." starts a new person).
-# ============================================================================
-
 - name: "Sherry Yang"
   affiliation: "NYU Courant / Google DeepMind"
   url: "https://sherryy.github.io/"

@@ -10,19 +10,11 @@ description: Organizers of the PTA @ NeurIPS 2026 workshop.
     <p>The team behind PTA @ NeurIPS 2026.</p>
   </div>
 
-  <div class="placeholder-note">
-    <strong>Note for the organizer:</strong> names, titles, and personal page links
-    below were carried over from the Google Sites page. Headshot photos are currently
-    placeholders — drop real photos into <code>assets/images/organizers/</code> and
-    update the <code>image:</code> field for each person in
-    <code>_data/organizers.yml</code>.
-  </div>
-
   <div class="people-grid">
     {% for person in site.data.organizers %}
     <div class="person-card">
       <div class="person-photo-wrap">
-        <img class="person-photo" src="{{ person.image | relative_url }}" alt="Photo of {{ person.name }}">
+        <img class="person-photo" src="{{ person.image | relative_url }}" alt="Photo of {{ person.name }}" onerror="this.onerror=null;this.src='{{ '/assets/images/placeholder-avatar.svg' | relative_url }}';">
       </div>
       <div class="person-name">
         {% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}

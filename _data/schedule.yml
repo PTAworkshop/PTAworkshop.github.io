@@ -1,8 +1,3 @@
-# ============================================================================
-# Schedule (draft) — edit freely.
-# `type` controls the row color: break | talk | session
-# ============================================================================
-
 - time: "8:30–8:40"
   event: "Opening remarks"
   type: break
