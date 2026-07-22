@@ -16,7 +16,6 @@ baseurl: ""
 
 # Files/folders Jekyll should not copy into the published site
 exclude:
-  - README.md
   - Gemfile
   - Gemfile.lock
   - original-google-sites-embeds

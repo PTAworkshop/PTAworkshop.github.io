@@ -75,6 +75,24 @@ description: >-
 
 <section class="section">
   <div class="container">
+    <h2>Invited Speakers</h2>
+    <div class="divider left"></div>
+    {% include people-grid.html people=site.data.speakers %}
+    <a class="section-cta" href="{{ '/speakers.html' | relative_url }}">View all speakers <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Organizers</h2>
+    <div class="divider left"></div>
+    {% include people-grid.html people=site.data.organizers %}
+    <a class="section-cta" href="{{ '/organizers.html' | relative_url }}">View all organizers <span class="arrow">&rarr;</span></a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
     <h2>Key Dates</h2>
     <div class="divider left"></div>
     <ul class="dates-list">

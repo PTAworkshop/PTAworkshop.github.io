@@ -539,6 +539,19 @@ h3 {
 }
 .person-link:hover { color: #2563eb; text-decoration: underline; }
 
+.section-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3b82f6;
+}
+.section-cta:hover { color: #2563eb; }
+.section-cta .arrow { transition: transform 0.15s; }
+.section-cta:hover .arrow { transform: translateX(3px); }
+
 /* ── Topics of Interest (CFP page) ── */
 .topics-sub {
   font-size: 16px;
