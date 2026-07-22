@@ -1,34 +1,34 @@
 - name: "Sherry Yang"
   affiliation: "NYU Courant / Google DeepMind"
   url: "https://sherryy.github.io/"
-  image: /assets/images/Sherry.jpg
+  image: /assets/images/speakers/Sherry.jpg
 
 - name: "Amy Zhang"
   affiliation: "UT Austin"
   url: "https://amyzhang.github.io/"
-  image: /assets/images/Amy.png
+  image: /assets/images/speakers/Amy.png
 
 - name: "Alexandre Proutiere"
   affiliation: "KTH Royal Institute of Technology"
   url: "https://people.kth.se/~alepro/"
-  image: /assets/images/Alexandre.jpg
+  image: /assets/images/speakers/Alexandre.jpg
 
 - name: "Aviral Kumar"
   affiliation: "CMU"
   url: "https://aviralkumar2907.github.io/"
-  image: /assets/images/Aviral.jpg
+  image: /assets/images/speakers/Aviral.jpg
 
 - name: "Benjamin Eysenbach"
   affiliation: "Princeton"
   url: "https://ben-eysenbach.github.io/"
-  image: /assets/images/Benjamin.jpg
+  image: /assets/images/speakers/Benjamin.jpg
 
 - name: "Adam White"
   affiliation: "University of Alberta / RL Core Technologies"
   url: "https://sites.ualberta.ca/~amw8/"
-  image: /assets/images/Adam.jpg
+  image: /assets/images/speakers/Adam.jpg
 
 - name: "Fabio Ramos"
   affiliation: "University of Sydney / NVIDIA"
   url: "https://fabioramos.github.io/Home.html"
-  image: /assets/images/Fabio.jpg
+  image: /assets/images/speakers/Fabio.jpg
