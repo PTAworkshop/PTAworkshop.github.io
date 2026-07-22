@@ -273,29 +273,42 @@ h3 {
   line-height: 1.75;
   color: #334155;
   margin-bottom: 16px;
-  max-width: var(--text-measure);
+  max-width: 100%;
 }
 .section:nth-of-type(even) { background: #ffffff; }
 
-/* ── Page banner (every non-home page shows the same banner image, just
-   shorter than the full home hero) ── */
+/* ── Page banner (every non-home page shows the same banner image, with a
+   big bold centered title) ── */
 .page-banner {
   position: relative;
   width: 100%;
+  min-height: 260px;
   overflow: hidden;
   background: var(--banner-overlay), var(--banner-image);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 56px 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 56px 24px;
 }
-.page-banner h1 { margin-bottom: 10px; }
+.page-banner h1 {
+  font-size: clamp(40px, 7vw, 72px);
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #60a5fa 0%, #f1f5f9 50%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .page-banner-sub {
   font-size: 17px;
   color: #cbd5e1;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
   line-height: 1.6;
-  max-width: var(--text-measure);
+  max-width: var(--hero-subtitle-width);
+  margin: 0 auto;
 }
 
 /* ── Page content (everything below the banner) ── */
