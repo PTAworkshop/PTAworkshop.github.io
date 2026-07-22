@@ -1,0 +1,14 @@
+<header class="site-header">
+  <nav class="nav">
+    <a class="nav-brand" href="{{ '/' | relative_url }}">
+      <span class="brand-accent">PTA</span> @ NeurIPS 2026
+    </a>
+    <div class="nav-links">
+      <a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="active"{% endif %}>Home</a>
+      <a href="{{ '/call-for-papers.html' | relative_url }}" {% if page.url contains 'call-for-papers' %}class="active"{% endif %}>Call for Papers</a>
+      <a href="{{ '/schedule.html' | relative_url }}" {% if page.url contains 'schedule' %}class="active"{% endif %}>Schedule</a>
+      <a href="{{ '/speakers.html' | relative_url }}" {% if page.url contains 'speakers' %}class="active"{% endif %}>Invited Speakers</a>
+      <a href="{{ '/organizers.html' | relative_url }}" {% if page.url contains 'organizers' %}class="active"{% endif %}>Organizers</a>
+    </div>
+  </nav>
+</header>

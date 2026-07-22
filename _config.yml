@@ -1,0 +1,29 @@
+title: "PTA: From Pretrained Representations to Acting Agents"
+short_title: "PTA @ NeurIPS 2026"
+description: >-
+  NeurIPS 2026 Workshop on bridging pretraining, planning, and test-time
+  decision making for acting agents.
+contact_email: pta.workshop2026@gmail.com
+
+# --------------------------------------------------------------------------
+# url / baseurl
+# --------------------------------------------------------------------------
+# Repo is "PTAworkshop.github.io" -> served at the root domain below,
+# so baseurl stays empty.
+# --------------------------------------------------------------------------
+url: "https://PTAworkshop.github.io"
+baseurl: ""
+
+# Files/folders Jekyll should not copy into the published site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - original-google-sites-embeds
+  - node_modules
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown

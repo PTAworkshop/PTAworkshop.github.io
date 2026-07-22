@@ -1,0 +1,31 @@
+---
+layout: default
+title: Schedule
+description: Full-day program for the PTA @ NeurIPS 2026 workshop.
+---
+
+<div class="container page-header">
+  <div class="card-header">
+    <h1>Schedule</h1>
+    <p>Draft schedule — subject to change. Edit <code>_data/schedule.yml</code> to update.</p>
+  </div>
+
+  <div class="schedule-wrap">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+          <th class="col-time">Time</th>
+          <th>Event</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in site.data.schedule %}
+        <tr class="{{ item.type }}">
+          <td class="col-time">{{ item.time }}</td>
+          <td>{{ item.event }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

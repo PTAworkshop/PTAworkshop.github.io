@@ -1,0 +1,55 @@
+# ============================================================================
+# Invited Speakers
+# ============================================================================
+# This list was pre-filled from your current Google Sites page so nothing
+# gets lost in the move. To finish the transfer, for EACH person:
+#
+#   1. Save their headshot photo as a .jpg/.png inside:
+#        assets/images/speakers/
+#      e.g. assets/images/speakers/sherry-yang.jpg
+#
+#   2. Change the `image:` line below from the shared placeholder to your
+#      new file, e.g.:
+#        image: /assets/images/speakers/sherry-yang.jpg
+#
+#   3. Double check `affiliation` and `url` (personal homepage) are correct,
+#      and edit them if anything changed.
+#
+# You can add/remove/reorder speakers freely — just copy the block format
+# below ("- name: ..." starts a new person).
+# ============================================================================
+
+- name: "Sherry Yang"
+  affiliation: "NYU Courant / Google DeepMind"
+  url: "https://sherryy.github.io/"
+  image: /assets/images/Sherry.jpg
+
+- name: "Amy Zhang"
+  affiliation: "UT Austin"
+  url: "https://amyzhang.github.io/"
+  image: /assets/images/Amy.png
+
+- name: "Alexandre Proutiere"
+  affiliation: "KTH Royal Institute of Technology"
+  url: "https://people.kth.se/~alepro/"
+  image: /assets/images/Alexandre.jpg
+
+- name: "Aviral Kumar"
+  affiliation: "CMU"
+  url: "https://aviralkumar2907.github.io/"
+  image: /assets/images/Aviral.jpg
+
+- name: "Benjamin Eysenbach"
+  affiliation: "Princeton"
+  url: "https://ben-eysenbach.github.io/"
+  image: /assets/images/Benjamin.jpg
+
+- name: "Adam White"
+  affiliation: "University of Alberta / RL Core Technologies"
+  url: "https://sites.ualberta.ca/~amw8/"
+  image: /assets/images/Adam.jpg
+
+- name: "Fabio Ramos"
+  affiliation: "University of Sydney / NVIDIA"
+  url: "https://fabioramos.github.io/Home.html"
+  image: /assets/images/Fabio.jpg

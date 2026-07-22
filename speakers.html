@@ -1,0 +1,35 @@
+---
+layout: default
+title: Invited Speakers
+description: Invited speakers for the PTA @ NeurIPS 2026 workshop.
+---
+
+<div class="container page-header">
+  <div class="card-header">
+    <h1>Invited Speakers</h1>
+    <p>Meet the researchers presenting at PTA @ NeurIPS 2026.</p>
+  </div>
+
+  <div class="placeholder-note">
+    <strong>Note for the organizer:</strong> names, affiliations, and personal page
+    links below were carried over from the Google Sites page. Headshot photos are
+    currently placeholders — drop real photos into
+    <code>assets/images/speakers/</code> and update the <code>image:</code> field for
+    each person in <code>_data/speakers.yml</code>.
+  </div>
+
+  <div class="people-grid">
+    {% for person in site.data.speakers %}
+    <div class="person-card">
+      <div class="person-photo-wrap">
+        <img class="person-photo" src="{{ person.image | relative_url }}" alt="Photo of {{ person.name }}">
+      </div>
+      <div class="person-name">
+        {% if person.url %}<a href="{{ person.url }}" target="_blank" rel="noopener">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}
+      </div>
+      <div class="person-affiliation">{{ person.affiliation }}</div>
+      {% if person.url %}<a class="person-link" href="{{ person.url }}" target="_blank" rel="noopener">Personal page &rarr;</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>

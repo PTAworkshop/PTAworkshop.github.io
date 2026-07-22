@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P2A Hero – Google Sites Embed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: transparent;
+    }
+
+    /* ── Hero wrapper ── */
+    .hero {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: transparent;
+      padding: 56px 32px 60px;
+      text-align: center;
+      border-radius: 16px;
+    }
+
+    /* ── Badge ── */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245,158,11,0.15);
+      border: 1px solid rgba(245,158,11,0.4);
+      color: #fbbf24;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+    .badge-dot {
+      width: 6px; height: 6px;
+      background: #f59e0b;
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.4; transform: scale(1.4); }
+    }
+
+    /* ── Title ── */
+    .title {
+      position: relative;
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.2;
+      color: #f1f5f9;
+      letter-spacing: -0.02em;
+      margin-bottom: 20px;
+    }
+    .title .p2a {
+      color: #60a5fa;
+      font-style: italic;
+    }
+    .title .highlight {
+      position: relative;
+      display: inline-block;
+      color: #fbbf24;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      width: 48px; height: 3px;
+      background: linear-gradient(90deg, #3b82f6, #f59e0b);
+      border-radius: 99px;
+      margin: 0 auto 20px;
+    }
+
+    /* ── Subtitle ── */
+    .subtitle {
+      font-size: clamp(14px, 2vw, 18px);
+      font-weight: 500;
+      color: #94a3b8;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      line-height: 1.6;
+    }
+
+    /* ── Tag pills ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .tag {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #cbd5e1;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 999px;
+      transition: background 0.2s;
+    }
+    .tag:hover { background: rgba(255,255,255,0.13); }
+  </style>
+</head>
+<body>
+
+<!-- ╔═══════════════════════════════════════════════╗
+     ║  PASTE EVERYTHING INSIDE <body> INTO         ║
+     ║  Google Sites → Insert → Embed → Embed code  ║
+     ╚═══════════════════════════════════════════════╝ -->
+
+<div class="hero">
+
+  <div class="badge">
+    <span class="badge-dot"></span>
+    NeurIPS 2026 Workshop
+  </div>
+
+  <h1 class="title">
+    <span class="p2a">PTA:</span> From Pretrained<br>
+    Representations to&nbsp;<span class="highlight">Acting Agents</span>
+  </h1>
+
+  <div class="divider"></div>
+
+  <p class="subtitle">
+    Bridging Pretraining, Planning, and Test-Time Decision Making
+  </p>
+
+  <div class="tags">
+    <span class="tag">Representation Learning</span>
+    <span class="tag">Reinforcement Learning</span>
+    <span class="tag">Robotics</span>
+    <span class="tag">World Models</span>
+    <span class="tag">Test-Time Scaling</span>
+    <span class="tag">Planning</span>
+  </div>
+
+</div>
+
+</body>
+</html>

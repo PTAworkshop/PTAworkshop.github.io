@@ -1,0 +1,49 @@
+# ============================================================================
+# Organizers
+# ============================================================================
+# Same idea as _data/speakers.yml — pre-filled from your Google Sites page.
+#
+#   1. Save each headshot as assets/images/organizers/<name>.jpg
+#   2. Point `image:` at that file instead of the shared placeholder.
+#   3. Double-check `title` and `url` and edit as needed.
+# ============================================================================
+
+- name: "Ping-Chun Hsieh"
+  title: "Associate Professor @ National Yang Ming Chiao Tung University"
+  url: "https://pinghsieh.github.io/"
+  image: /assets/images/Ping-Chun.jpg
+
+- name: "Kuang-Huei Lee"
+  title: "Senior Staff Research Scientist @ Google DeepMind"
+  url: "https://kuanghuei.github.io/"
+  image: /assets/images/Kuang-Huei.jpg
+
+- name: "Bo Dai"
+  title: "Assistant Professor @ Georgia Tech / Senior Staff Research Scientist @ Google DeepMind"
+  url: "https://bo-dai.github.io/"
+  image: /assets/images/Bo.jpg
+
+- name: "Yen-Ling Kuo"
+  title: "Assistant Professor @ University of Virginia"
+  url: "https://yenlingkuo.com/"
+  image: /assets/images/Yen-Ling.jpg
+
+- name: "Georgia Chalvatzaki"
+  title: "Full Professor @ TU Darmstadt and Hessian.AI"
+  url: "https://pearl-lab.com/people/georgia-chalvatzaki/"
+  image: /assets/images/Georgia.jpg
+
+- name: "Karen Leung"
+  title: "Assistant Professor @ University of Washington / Faculty Scientist @ NVIDIA Research"
+  url: "https://faculty.washington.edu/kymleung/"
+  image: /assets/images/Karen.jpg
+
+- name: "Co Yong"
+  title: "PhD Student @ National Taiwan University"
+  url: "https://coyoung41.github.io/"
+  image: /assets/images/Co.jpg
+
+- name: "Claas Voelcker"
+  title: "PostDoc @ University of Texas at Austin"
+  url: "https://cvoelcker.de/"
+  image: /assets/images/Claas.jpg
