@@ -1,0 +1,8 @@
+<ul class="dates-list">
+  {% for date in site.data.dates %}
+  <li>
+    <span class="date-label">{{ date.label }}</span>
+    <span class="date-value">{{ date.value }}</span>
+  </li>
+  {% endfor %}
+</ul>
