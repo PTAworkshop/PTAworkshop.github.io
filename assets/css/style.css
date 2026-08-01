@@ -228,10 +228,11 @@ h1 {
   border-radius: 999px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.18);
 }
-.hero-location svg {
-  width: 17px;
-  height: 17px;
-  flex-shrink: 0;
+.hero-location-icon {
+  display: block;
+  flex: none;
+  width: 16px;
+  height: 16px;
   color: #fbbf24;
 }
 .btn {
