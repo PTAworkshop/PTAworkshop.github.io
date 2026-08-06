@@ -32,3 +32,8 @@
   affiliation: "University of Sydney / NVIDIA"
   url: "https://fabioramos.github.io/Home.html"
   image: /assets/images/speakers/Fabio.jpg
+
+- name: "Yujin Tang"
+  affiliation: "Sakana AI"
+  url: "https://lerrytang.github.io/"
+  image: /assets/images/speakers/Tang.jpg
