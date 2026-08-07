@@ -1,3 +1,18 @@
+- name: "Aviral Kumar"
+  affiliation: "CMU"
+  url: "https://aviralkumar2907.github.io/"
+  image: /assets/images/speakers/Aviral.jpg
+
+- name: "Alexandre Proutiere"
+  affiliation: "KTH Royal Institute of Technology"
+  url: "https://people.kth.se/~alepro/"
+  image: /assets/images/speakers/Alexandre.jpg
+
+- name: "Benjamin Eysenbach"
+  affiliation: "Princeton"
+  url: "https://ben-eysenbach.github.io/"
+  image: /assets/images/speakers/Benjamin.jpg
+
 - name: "Sherry Yang"
   affiliation: "NYU Courant / Google DeepMind"
   url: "https://sherryy.github.io/"
@@ -8,20 +23,10 @@
   url: "https://nali.seas.harvard.edu"
   image: /assets/images/speakers/Na.jpg
 
-- name: "Alexandre Proutiere"
-  affiliation: "KTH Royal Institute of Technology"
-  url: "https://people.kth.se/~alepro/"
-  image: /assets/images/speakers/Alexandre.jpg
-
-- name: "Aviral Kumar"
-  affiliation: "CMU"
-  url: "https://aviralkumar2907.github.io/"
-  image: /assets/images/speakers/Aviral.jpg
-
-- name: "Benjamin Eysenbach"
-  affiliation: "Princeton"
-  url: "https://ben-eysenbach.github.io/"
-  image: /assets/images/speakers/Benjamin.jpg
+- name: "Yujin Tang"
+  affiliation: "Sakana AI"
+  url: "https://lerrytang.github.io/"
+  image: /assets/images/speakers/Tang.jpg
 
 - name: "Adam White"
   affiliation: "University of Alberta / RL Core Technologies"
@@ -32,8 +37,3 @@
   affiliation: "University of Sydney / NVIDIA"
   url: "https://fabioramos.github.io/Home.html"
   image: /assets/images/speakers/Fabio.jpg
-
-- name: "Yujin Tang"
-  affiliation: "Sakana AI"
-  url: "https://lerrytang.github.io/"
-  image: /assets/images/speakers/Tang.jpg
