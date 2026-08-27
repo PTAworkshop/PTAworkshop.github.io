@@ -365,11 +365,27 @@ h3 {
   letter-spacing: 0.04em;
   margin-bottom: 6px;
 }
+.date-previous {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #94a3b8;
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+.date-previous del {
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: #94a3b8;
+}
 .date-value {
   display: block;
   font-size: 16px;
   font-weight: 700;
   color: #0f172a;
+}
+.dates-list li.date-updated {
+  border-left-color: #f59e0b;
 }
 
 /* ── Quick link cards on home page ── */

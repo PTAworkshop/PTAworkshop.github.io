@@ -1,7 +1,10 @@
 <ul class="dates-list">
   {% for date in site.data.dates %}
-  <li>
+  <li{% if date.previous %} class="date-updated"{% endif %}>
     <span class="date-label">{{ date.label }}</span>
+    {% if date.previous %}
+    <span class="date-previous"><del>{{ date.previous }}</del></span>
+    {% endif %}
     <span class="date-value">{{ date.value }}</span>
   </li>
   {% endfor %}
