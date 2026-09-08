@@ -9,3 +9,5 @@ Gemfile.lock
 
 # Original Google Sites reference files - keep locally, don't publish to GitHub
 original-google-sites-embeds/
+
+reviewer_list.py

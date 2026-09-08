@@ -384,8 +384,17 @@ h3 {
   font-weight: 700;
   color: #0f172a;
 }
-.dates-list li.date-updated {
+.dates-list li.date-updated,
+.dates-list li.date-highlight {
   border-left-color: #f59e0b;
+}
+.dates-list li.date-passed {
+  border-left-color: #94a3b8;
+  background: #f8fafc;
+}
+.dates-list li.date-passed .date-label,
+.dates-list li.date-passed .date-value {
+  color: #94a3b8;
 }
 
 /* ── Quick link cards on home page ── */

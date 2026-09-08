@@ -1,6 +1,14 @@
 <ul class="dates-list">
   {% for date in site.data.dates %}
-  <li{% if date.previous %} class="date-updated"{% endif %}>
+  {% assign date_class = "" %}
+  {% if date.passed %}
+    {% assign date_class = "date-passed" %}
+  {% elsif date.highlight %}
+    {% assign date_class = "date-highlight" %}
+  {% elsif date.previous %}
+    {% assign date_class = "date-updated" %}
+  {% endif %}
+  <li{% if date_class != "" %} class="{{ date_class }}"{% endif %}>
     <span class="date-label">{{ date.label }}</span>
     {% if date.previous %}
     <span class="date-previous"><del>{{ date.previous }}</del></span>
