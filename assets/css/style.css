@@ -397,6 +397,57 @@ h3 {
   color: #94a3b8;
 }
 
+/* ── FAQ (home page). Entries live in _data/faq.yml ── */
+#faq {
+  background: #f8fafc;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+.faq-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #3b82f6;
+  border-radius: 12px;
+  padding: 18px 22px;
+}
+.faq-question {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+.faq-answer {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #334155;
+}
+.faq-answer p {
+  margin: 0;
+}
+.faq-answer p + p {
+  margin-top: 8px;
+}
+.faq-answer a {
+  color: #2563eb;
+  font-weight: 700;
+}
+.faq-answer a:hover {
+  text-decoration: underline;
+}
+.faq-answer ul,
+.faq-answer ol {
+  margin: 8px 0 0;
+  padding-left: 1.25em;
+}
+.faq-answer li + li {
+  margin-top: 4px;
+}
+
 /* ── Quick link cards on home page ── */
 .quick-links {
   display: grid;

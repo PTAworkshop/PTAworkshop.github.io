@@ -1,0 +1,8 @@
+<div class="faq-list">
+  {% for item in site.data.faq %}
+  <article class="faq-item">
+    <h3 class="faq-question">{{ item.question }}</h3>
+    <div class="faq-answer">{{ item.answer | markdownify }}</div>
+  </article>
+  {% endfor %}
+</div>
