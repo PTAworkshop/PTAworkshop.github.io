@@ -12,9 +12,15 @@ description: Papers accepted to the PTA @ NeurIPS 2026 workshop.
 </div>
 
 <div class="container page-content">
+  <div class="paper-search">
+    <svg class="paper-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    <input id="paper-search-input" type="search" placeholder="Search by title or author..." aria-label="Search papers by title or author" autocomplete="off">
+  </div>
+  <p class="paper-search-empty" id="paper-search-empty" hidden>No papers match your search.</p>
+
   {% assign paper_sessions = "Oral|Poster session 1|Poster session 2" | split: "|" %}
   {% for session_name in paper_sessions %}
-  <section class="paper-session">
+  <section class="paper-session" id="{{ session_name | slugify }}">
     <h2>{{ session_name }}</h2>
     <div class="divider left"></div>
     <ul class="paper-list">
@@ -26,13 +32,16 @@ description: Papers accepted to the PTA @ NeurIPS 2026 workshop.
           {% assign show_paper = true %}
         {% endif %}
         {% if show_paper %}
-        <li>
+        <li class="paper-card{% if session_name == 'Oral' %} paper-card-oral{% endif %}" data-search="{{ paper.title | append: ' ' | append: paper.authors | downcase | escape }}">
+          {% if paper.oral and session_name != "Oral" %}<span class="paper-tag">Oral</span>{% endif %}
           {% if paper.url %}
           <a class="paper-title" href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
           {% else %}
           <span class="paper-title">{{ paper.title }}</span>
           {% endif %}
           <p class="paper-authors">{{ paper.authors }}</p>
+          {% if session_name == "Oral" and paper.session %}<p class="paper-meta">Also presented in {{ paper.session }}</p>{% endif %}
+          {% if paper.url %}<a class="paper-link" href="{{ paper.url }}" target="_blank" rel="noopener">OpenReview &rarr;</a>{% endif %}
         </li>
         {% endif %}
       {% endfor %}
@@ -40,3 +49,30 @@ description: Papers accepted to the PTA @ NeurIPS 2026 workshop.
   </section>
   {% endfor %}
 </div>
+
+<script>
+  (function () {
+    var input = document.getElementById('paper-search-input');
+    var empty = document.getElementById('paper-search-empty');
+    var sections = document.querySelectorAll('.paper-session');
+
+    input.addEventListener('input', function () {
+      var terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      var anyVisible = false;
+
+      sections.forEach(function (section) {
+        var sectionVisible = false;
+        section.querySelectorAll('.paper-card').forEach(function (card) {
+          var text = card.getAttribute('data-search');
+          var match = terms.every(function (t) { return text.indexOf(t) !== -1; });
+          card.hidden = !match;
+          if (match) sectionVisible = true;
+        });
+        section.hidden = !sectionVisible;
+        if (sectionVisible) anyVisible = true;
+      });
+
+      empty.hidden = anyVisible;
+    });
+  })();
+</script>
