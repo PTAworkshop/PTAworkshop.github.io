@@ -1,0 +1,43 @@
+---
+layout: default
+title: Accepted Papers
+description: Papers accepted to the PTA @ NeurIPS 2026 workshop.
+---
+
+<div class="page-banner">
+  <div class="container">
+    <h1>Accepted Papers</h1>
+    <p class="page-banner-sub">Papers accepted to PTA @ NeurIPS 2026.</p>
+  </div>
+</div>
+
+<div class="container page-content">
+  <div class="schedule-wrap">
+    <table class="schedule-table papers-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th class="col-authors">Authors</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for paper in site.data.accepted_papers %}
+        <tr>
+          <td>
+            {% if paper.url %}
+            <a class="paper-title" href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+            {% else %}
+            <span class="paper-title">{{ paper.title }}</span>
+            {% endif %}
+          </td>
+          <td class="col-authors">{{ paper.authors }}</td>
+        </tr>
+        {% else %}
+        <tr>
+          <td colspan="2" class="papers-empty">Accepted papers will be posted here.</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

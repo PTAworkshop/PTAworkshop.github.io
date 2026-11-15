@@ -672,6 +672,28 @@ h3 {
 .schedule-table tr.break .col-time { color: #64748b; font-weight: 500; }
 .schedule-table tr.break td:last-child { color: #475569; }
 
+/* ── Accepted papers table ── */
+.papers-table .col-authors {
+  width: 42%;
+  color: #475569;
+}
+.papers-table .paper-title {
+  font-weight: 600;
+  color: #1e293b;
+}
+.papers-table a.paper-title {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.papers-table a.paper-title:hover { color: #1e40af; }
+.papers-table .papers-empty {
+  color: #64748b;
+  font-style: italic;
+  text-align: center;
+  padding: 28px 18px;
+}
+
 /* ── People grid (Speakers / Organizers) ── */
 .people-grid {
   display: grid;

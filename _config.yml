@@ -20,6 +20,8 @@ exclude:
   - Gemfile.lock
   - original-google-sites-embeds
   - node_modules
+  - fetch_accepted_authors.py
+  - "NeurIPS 2026 Workshop PTA Submission Status.csv"
 
 plugins:
   - jekyll-seo-tag

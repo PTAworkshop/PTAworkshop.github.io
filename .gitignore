@@ -11,3 +11,6 @@ Gemfile.lock
 original-google-sites-embeds/
 
 reviewer_list.py
+fetch_accepted_authors.py
+NeurIPS 2026 Workshop PTA Submission Status.csv
+__pycache__/
