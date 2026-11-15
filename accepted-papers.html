@@ -12,32 +12,31 @@ description: Papers accepted to the PTA @ NeurIPS 2026 workshop.
 </div>
 
 <div class="container page-content">
-  <div class="schedule-wrap">
-    <table class="schedule-table papers-table">
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th class="col-authors">Authors</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for paper in site.data.accepted_papers %}
-        <tr>
-          <td>
-            {% if paper.url %}
-            <a class="paper-title" href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
-            {% else %}
-            <span class="paper-title">{{ paper.title }}</span>
-            {% endif %}
-          </td>
-          <td class="col-authors">{{ paper.authors }}</td>
-        </tr>
-        {% else %}
-        <tr>
-          <td colspan="2" class="papers-empty">Accepted papers will be posted here.</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
+  {% assign paper_sessions = "Oral|Poster session 1|Poster session 2" | split: "|" %}
+  {% for session_name in paper_sessions %}
+  <section class="paper-session">
+    <h2>{{ session_name }}</h2>
+    <div class="divider left"></div>
+    <ul class="paper-list">
+      {% for paper in site.data.accepted_papers %}
+        {% assign show_paper = false %}
+        {% if session_name == "Oral" and paper.oral %}
+          {% assign show_paper = true %}
+        {% elsif paper.session == session_name %}
+          {% assign show_paper = true %}
+        {% endif %}
+        {% if show_paper %}
+        <li>
+          {% if paper.url %}
+          <a class="paper-title" href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+          {% else %}
+          <span class="paper-title">{{ paper.title }}</span>
+          {% endif %}
+          <p class="paper-authors">{{ paper.authors }}</p>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
 </div>
