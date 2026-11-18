@@ -103,7 +103,7 @@
   url: "https://openreview.net/forum?id=sN7UURLPmx"
   session: "Poster session 1"
 - title: "Probing Physical Readability Under Temporal Straightening in Visual World Models"
-  authors: "Daniel Hacobian, Erin F. Lee, Utsav Sharma, Eeshan G Dandamudi, Mohammed Mahfoud, Anusha Mujumdar"
+  authors: "Daniel Hacobian*, Erin F. Lee*, Utsav Sharma†, Eeshan G Dandamudi†, Mohammed Mahfoud, Anusha Mujumdar"
   url: "https://openreview.net/forum?id=8OMSCDjxbE"
   session: "Poster session 1"
 - title: "One Loss Is Not Enough: Cross-Objective Structured Pruning for Reasoning Vision–Language–Action Models"
