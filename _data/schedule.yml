@@ -2,10 +2,10 @@
   event: "Opening remarks"
   type: break
 - time: "8:40–9:10"
-  event: "Sherry Yang (NYU)"
+  event: "Invited talk: Sherry Yang"
   type: talk
 - time: "9:10–9:40"
-  event: "Adam White (Alberta)"
+  event: "Invited talk: Adam White"
   type: talk
 - time: "9:40–10:10"
   event: "Oral presentations 1"
@@ -14,10 +14,10 @@
   event: "Coffee break"
   type: break
 - time: "10:30–11:00"
-  event: "Benjamin Eysenbach (Princeton; remote)"
+  event: "Invited talk: Benjamin Eysenbach (virtual)"
   type: talk
 - time: "11:00–11:30"
-  event: "Fabio Ramos (NVIDIA)"
+  event: "Invited talk: Fabio Ramos"
   type: talk
 - time: "11:30–12:15"
   event: "Poster session 1"
@@ -26,10 +26,10 @@
   event: "Lunch break"
   type: break
 - time: "13:15–13:45"
-  event: "Aviral Kumar (CMU; remote)"
+  event: "Invited talk: Aviral Kumar (virtual)"
   type: talk
 - time: "13:45–14:15"
-  event: "Na Li (Harvard; remote)"
+  event: "Invited talk: Na Li (virtual)"
   type: talk
 - time: "14:15–15:00"
   event: "Poster session 2"
@@ -41,7 +41,7 @@
   event: "Oral presentations 2"
   type: session
 - time: "15:50–16:20"
-  event: "Yujin Tang (Sakana AI)"
+  event: "Invited talk: Yujin Tang"
   type: talk
 - time: "16:20–17:00"
   event: "Panel discussion"
